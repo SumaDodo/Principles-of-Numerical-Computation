@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    // initialize the variables
+    double eps = 1.0f;
+    float eps1 = 1.0f;
+
+    //single precision
+    while ((float)(1.0 + (eps1 / 2.0)) != 1.0) //until epsilon value reaches underflow, continue
+    {
+      eps1 = eps1 / 2.0f;//divide the epsilon by 2.0f
+    }
+
+    printf("\nMachine epsilon value for Single Precision: %G\n", eps1);
+
+    //double precision
+    while ((double)(1.0 + (eps / 2.0)) != 1) //until epsilon value reaches underflow, continue
+    {
+      eps = eps / 2.0f; //divide the epsilon by 2.0f
+    }
+
+    printf("Machine Epsilon value for double Precision: %G\n", eps);
+
+
+
+    return 0;
+  }

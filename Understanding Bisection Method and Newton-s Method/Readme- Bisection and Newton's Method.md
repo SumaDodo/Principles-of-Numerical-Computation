@@ -1,4 +1,4 @@
-**Bisection Method:**
+**Bisection Method:**  
 
 **Write and test a program to implement the bisection method. Test the program on the following functions and intervals  
 (a) x^-1 - tan(x) on [0, 22/14].  
